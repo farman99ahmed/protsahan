@@ -332,7 +332,7 @@ p {
           color: #0067f4; }
 
 .header-hero {
-  height: 850px;
+  height: 650px;
   position: relative; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .header-hero {
