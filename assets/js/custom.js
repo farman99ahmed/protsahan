@@ -32,7 +32,7 @@ var tmax_opts = {
 
 
 
-  HTML CSS JSResult
+  //HTML CSS JSResult
 var $w = $( window ).width();
 var $dW = $('.bb8').css('width');
 $dW = $dW.replace('px', '');
@@ -102,3 +102,18 @@ $( document ).on( "mousemove", function( event ) {
   return $mPos;
 });
 
+//======== COC Card Event Starts========//
+$(".option").click(function(){
+  $(".option").removeClass("active");
+  $(this).addClass("active");
+  
+});
+//========== COC Card JS Ends===========//
+
+//==========Competition Card Starts Here=========//
+$(".option").click(function(){
+  $(".option").removeClass("active");
+  $(this).addClass("active");
+  
+});
+//=========Competition Card Ends Here ===========//

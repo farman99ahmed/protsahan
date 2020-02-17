@@ -88,14 +88,7 @@ $(function() {
     });
     
     
-//======== Card Event Starts========//
-$(".option").click(function(){
-    $(".option").removeClass("active");
-    $(this).addClass("active");
-    
- });
-  
-//========== Card JS Ends===========/ 
+
     
     
     

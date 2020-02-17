@@ -217,7 +217,7 @@
       transform: translateX(-1000px);
     }
   }
-  /*======Card CSS Starts Here=====*/
+  /*====== COC Card CSS Starts Here=====*/
   @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
   *, *:before, *:after {
     box-sizing: border-box;
@@ -429,21 +429,306 @@
     z-index: 999;
   }
   
-  /*=========Card CSS Ends here=======*/
+  /*=========COC Card CSS Ends here=======*/
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  /*=========Competition Card Starts Here=======*/
+  
+   .compe{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    padding-top: unset;
+  }
+   .credit {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #000;
+  }
+   .options {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-box-align: stretch;
+            align-items: stretch;
+    overflow: hidden;
+    min-width: 600px;
+    max-width: 900px;
+    width: calc(100% - 100px);
+    height: 400px;
+  }
+  @media screen and (max-width: 718px) {
+     .options {
+      min-width: 520px;
+    }
+     .options .option:nth-child(5) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 638px) {
+     .options {
+      min-width: 440px;
+    }
+     .options .option:nth-child(4) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 558px) {
+     .options {
+      min-width: 360px;
+    }
+     .options .option:nth-child(3) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 478px) {
+     .options {
+      min-width: 280px;
+    }
+     .options .option:nth-child(2) {
+      display: none;
+    }
+  }
+   .options .option {
+    position: relative;
+    overflow: hidden;
+    min-width: 60px;
+    margin: 10px;
+    background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
+    background-size: auto 120%;
+    background-position: center;
+    cursor: pointer;
+    -webkit-transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  }
+   .options .option:nth-child(1) {
+    --defaultBackground:#ED5565;
+  }
+   .options .option:nth-child(2) {
+    --defaultBackground:#FC6E51;
+  }
+   .options .option:nth-child(3) {
+    --defaultBackground:#FFCE54;
+  }
+   .options .option:nth-child(4) {
+    --defaultBackground:#2ECC71;
+  }
+   .options .option:nth-child(5) {
+    --defaultBackground:#5D9CEC;
+  }
+   .options .option:nth-child(6) {
+    --defaultBackground:#AC92EC;
+  }
+   .options .option.active {
+    -webkit-box-flex: 10000;
+            flex-grow: 10000;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    max-width: 600px;
+    margin: 0px;
+    border-radius: 40px;
+    background-size: auto 100%;
+  }
+   .options .option.active .shadow {
+    box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+  }
+   .options .option.active .label {
+    bottom: 20px;
+    left: 20px;
+  }
+   .options .option.active .label .info > div {
+    left: 0px;
+    opacity: 1;
+  }
+   .options .option.active:active {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+   .options .option:not(.active) {
+    -webkit-box-flex: 1;
+            flex-grow: 1;
+    border-radius: 30px;
+  }
+   .options .option:not(.active) .shadow {
+    bottom: -40px;
+    box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+  }
+   .options .option:not(.active) .label {
+    bottom: 10px;
+    left: 10px;
+  }
+   .options .option:not(.active) .label .info > div {
+    left: 20px;
+    opacity: 0;
+  }
+   .options .option .shadow {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 120px;
+    -webkit-transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  }
+   .options .option .label {
+    display: -webkit-box;
+    display: flex;
+    position: absolute;
+    right: 0px;
+    height: 40px;
+    -webkit-transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  }
+   .options .option .label .icon {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    min-width: 40px;
+    max-width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    color: var(--defaultBackground);
+  }
+   .options .option .label .info {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    margin-left: 10px;
+    color: white;
+    white-space: pre;
+  }
+   .options .option .label .info > div {
+    position: relative;
+    -webkit-transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+  }
+   .options .option .label .info .main {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+   .options .option .label .info .sub {
+    -webkit-transition-delay: .1s;
+            transition-delay: .1s;
+  }
+  
+  /*===============Competition Card Ends Here===================*/  
+  /*===============Games Card Starts Here ======================*/
+  @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:900');
+.game {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  font-family: sans-serif;
+  margin: 0;
+  background: #6D6027;
+  background: -webkit-linear-gradient(left, #D3CBB8, #6D6027);
+  background: -o-linear-gradient(left, #D3CBB8, #6D6027);
+  background: linear-gradient(to right, #D3CBB8, #6D6027);
+}
+@media (max-width: 767px) {
+  .game {
+    display: block;
+  }
+}
+.gamecard {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  cursor: pointer;
+  height: 300px;
+  margin: 20px;
+  padding: 0 20px;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0,0,0,0.025);
+  text-align: center;
+  transition: height 1000ms;
+  width: 260px;
+}
+@media (max-width: 767px) {
+  .gamecard {
+    left: calc(50% - 20px);
+    transform: translateX(-50%);
+  }
+}
+.gamecard.expanded {
+  height: 400px;
+}
+.gamelabel {
+  margin-top: 30px;
+  transform: translateY(10px);
+  transition: transform 1000ms;
+}
+.gamecard.expanded .gamelabel {
+  transform: translateY(0);
+}
+.gametext1 {
+  clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
+  -webkit-clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
+  transition: clip-path 1000ms;
+}
+.gamecard.expanded .gametext1 {
+  clip-path: polygon(0% 100%, 0 -100%, 50% -15%, 100% -100%, 100% 100%);
+  -webkit-clip-path: polygon(0% 100%, 0 -100%, 50% -15%, 100% -100%, 100% 100%);
+}
+.gametext2 {
+  clip-path: polygon(0% 100%,0% -80%,15% -70%,17.23% -53.59%,23% -40%,27.23% -28.94%,35% -20%,41.09% -13.59%,50% -10%,58.91% -13.23%,65% -20%,72.77% -28.23%,77% -40%,82.77% -54.65%,85% -70%,100% -80%,100% 100%);
+  -webkit-clip-path: polygon(0% 100%,0% -80%,15% -70%,17.23% -53.59%,23% -40%,27.23% -28.94%,35% -20%,41.09% -13.59%,50% -10%,58.91% -13.23%,65% -20%,72.77% -28.23%,77% -40%,82.77% -54.65%,85% -70%,100% -80%,100% 100%);
+  transition: clip-path 1000ms;
+}
+.gamecard.expanded .gametext2 {
+  clip-path: polygon(0% 100%,0% -90%,15% -80%,17.23% -63.59%,23% -50%,27.23% -38.94%,35% -30%,41.09% -23.59%,50% -20%,58.91% -23.23%,65% -30%,72.77% -38.23%,77% -50%,82.77% -64.65%,85% -80%,100% -90%,100% 100%);
+  -webkit-clip-path: polygon(0% 100%,0% -90%,15% -80%,17.23% -63.59%,23% -50%,27.23% -38.94%,35% -30%,41.09% -23.59%,50% -20%,58.91% -23.23%,65% -30%,72.77% -38.23%,77% -50%,82.77% -64.65%,85% -80%,100% -90%,100% 100%);
+}
+.gametext-content {
+  transform: translateY(-160px);
+  transition: transform 1000ms;
+}
+.gamecard.expanded .gametext-content {
+  transform: translateY(-15px);
+}
+.gamechevron {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 15px);
+  transform-origin: 50%;
+  transform: rotate(180deg);
+  transition: transform 1000ms;
+}
+.gamecard.expanded .gamechevron {
+  transform: rotate(0deg);
+}
+.gametitle {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 900;
+  margin: 20px 0 12px;
+}
+.gamebody-text {
+  padding: 0 20px;
+}
+/*============Ganes Card Ends Here=====================*/
