@@ -109,11 +109,3 @@ $(".option").click(function(){
   
 });
 //========== COC Card JS Ends===========//
-
-//==========Competition Card Starts Here=========//
-$(".option").click(function(){
-  $(".option").removeClass("active");
-  $(this).addClass("active");
-  
-});
-//=========Competition Card Ends Here ===========//

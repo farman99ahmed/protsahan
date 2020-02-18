@@ -30,10 +30,8 @@
   <!--====== Style css ======-->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 
-  <!--======Competition Requirements=========-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://codepen.io/z-/pen/a8e37caf2a04602ea5815e5acedab458.js"></script>
 
 </head>
 
@@ -95,7 +93,7 @@
 
   <!--====== Competiton Part Starts Here ======-->
 
-  <section id="pricing" class="pricing-area">
+  <section id="pricing" class="pricing-area" style="padding-bottom: 10px;">
     <div class="call-action-content text-center">
       <h2 class="call-title">Star Attractions</h2>
     </div> <!-- slider-content -->
@@ -110,7 +108,7 @@
               <i class="fas fa-walking"></i>
             </div>
             <div class="info">
-              <div class="main">Blonkisoaz</div>
+              <div class="main">Nrityam</div>
               <div class="sub">Omuke trughte a otufta</div>
             </div>
           </div>
@@ -120,10 +118,10 @@
           <div class="shadow"></div>
           <div class="label">
             <div class="icon">
-              <i class="fas fa-snowflake"></i>
+              <i class="fas fa-music"></i>
             </div>
             <div class="info">
-              <div class="main">Oretemauw</div>
+              <div class="main">Melodia</div>
               <div class="sub">Omuke trughte a otufta</div>
             </div>
           </div>
@@ -133,36 +131,36 @@
           <div class="shadow"></div>
           <div class="label">
             <div class="icon">
-              <i class="fas fa-tree"></i>
+              <i class="fas fa-tshirt"></i>
             </div>
             <div class="info">
-              <div class="main">Iteresuselle</div>
+              <div class="main">Fashion Show</div>
               <div class="sub">Omuke trughte a otufta</div>
             </div>
           </div>
         </div>
         <div class="option"
-          style="--optionBackground:url(https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg);">
+          style="--optionBackground:url(https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg);">
           <div class="shadow"></div>
           <div class="label">
             <div class="icon">
-              <i class="fas fa-tint"></i>
+              <i class="fas fa-turntable"></i>
             </div>
             <div class="info">
-              <div class="main">Idiefe</div>
+              <div class="main">EDM Night</div>
               <div class="sub">Omuke trughte a otufta</div>
             </div>
           </div>
         </div>
         <div class="option"
-          style="--optionBackground:url(https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg);">
+          style="--optionBackground:url(https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg);">
           <div class="shadow"></div>
           <div class="label">
             <div class="icon">
-              <i class="fas fa-sun"></i>
+              <i class="fas fa-microphone-alt"></i>
             </div>
             <div class="info">
-              <div class="main">Inatethi</div>
+              <div class="main">Special Performance</div>
               <div class="sub">Omuke trughte a otufta</div>
             </div>
           </div>
@@ -901,7 +899,8 @@
 
   <!--====== jquery js ======-->
   <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+  <!-- <script src="assets/js/vendor/jquery-1.12.4.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <!--====== Bootstrap js ======-->
   <script src="assets/js/bootstrap.min.js"></script>
@@ -912,7 +911,9 @@
   <script src="assets/js/jquery.easing.min.js"></script>
   <script src="assets/js/scrolling-nav.js"></script>
 
+    <!--======Competition Requirements=========-->
 
+    <script src="assets/js/codepen.js"></script>
 
   <!--====== Magnific Popup js ======-->
   <script src="assets/js/jquery.magnific-popup.min.js"></script>
@@ -921,9 +922,16 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/custom.js"></script>
 
-  <!--======Competition Requirements=========-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://codepen.io/z-/pen/a8e37caf2a04602ea5815e5acedab458.js"></script>
+  <script>
+    $(".option").click(function(){
+   $(".option").removeClass("active");
+   $(this).addClass("active");
+   
+});
+
+  </script>
+
+
 
 
 </body>
