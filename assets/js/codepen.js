@@ -6,9 +6,8 @@ var button = button || false;
 if (window.location.href.indexOf("fullcpgrid") == -1 /*Small on pages*/ && window.location.href.indexOf("debug") /*...debug, mentioned for whenever I forget how to read code*/ == -1 && window.location.href.indexOf("fullembedgrid") == -1 /*Focused/details*/) { //Don't show on these pages
     document.body.innerHTML +=
         `<link href="https://codepen.io/z-/pen/a8e37caf2a04602ea5815e5acedab458.css" rel="stylesheet">
-        <div style=position:fixed;bottom:-5rem;right:-5rem; id=user-button><div class=u-icons style=position:absolute;z-index:950;top:50%;left:50%;width:0;height:0%;opacity:0;>
-        <a href=https://twitter.com/Osorpenke target=_blank><div class="u-card fab fa-twitter"></div></a><a href=https://codepen.io/z- target=_blank>
-        <div class="u-card fab fa-codepen"></div></a>${randomItem}</div><div class="u-card u-main"style=position:relative;z-index:1000;width:4rem;height:4rem;display:grid;place-items:center;background:var(--user-button-background)><img alt=""style="height:100%; width:100%;"src=https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/happy.svg>${button ? `<iframe frameborder=0 src=https://codepen.io/z-/posts/></iframe>` : ``}</div></div>` //https://codepen.io/z-/pen/37f471adc6c5dba134cac86a34c93a61
+        
+        ${randomItem}</div></div></div>` //https://codepen.io/z-/pen/37f471adc6c5dba134cac86a34c93a61
 }//https://i.imgur.com/DZ3sYcD.png
 
 //fullcpgrid/a8e37caf2a04602ea5815e5acedab458
