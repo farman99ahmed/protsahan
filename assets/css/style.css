@@ -174,8 +174,9 @@ p {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s; }
   .navgition.navgition-transparent {
-    background-color: transparent;
-    position: absolute;
+    background-color: #fff;
+    position: fixed;
+    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
@@ -520,13 +521,14 @@ p {
       4.PRICING css 
 ===========================*/
 .pricing-area {
-  padding-top: 50px;
+  /*padding-top: 50px;*/
   padding-bottom: 50px;
-  background-color: #ffc510; }
+  background-color: #ffc510;
+  padding-top: 10%;}
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .pricing-area {
       padding-top: 100px;
-      padding-bottom: 100px; } }
+      padding-bottom: 50px;} }
   @media (max-width: 767px) {
     .pricing-area {
       padding-top: 80px;
@@ -982,3 +984,5 @@ p.form-message.error {
   .back-to-top:hover {
     background-color: #005ad5;
     color: #fff; }
+
+  
