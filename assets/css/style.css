@@ -22,10 +22,10 @@
 /*===========================
     1. COMMON css 
 ===========================*/
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800");
 @import url('https://fonts.googleapis.com/css?family=Happy+Monkey&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Bangers', cursive;
   font-weight: normal;
   font-style: normal;
   color: #121212; }
@@ -34,7 +34,7 @@ body {
   ul,
   li,
   ol {
-    font-family: 'Happy Monkey', cursive;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     color: #222;
     font-weight: bold;
   }
@@ -72,7 +72,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.075em;
+  font-family: "Bangers", cursive;
   font-weight: 700;
   color: #121212;
   margin: 0px; }
@@ -275,7 +276,7 @@ p {
           content: '';
           width: 8px;
           height: 4px;
-          background-color: #0067f4;
+          background-color: #f2c513;
           left: 50%;
           margin: 0 2px;
           bottom: 14px;
@@ -295,7 +296,7 @@ p {
           left: auto;
           right: 50%; }
       .navgition .navbar .navbar-nav .nav-item.active > a, .navgition .navbar .navbar-nav .nav-item:hover > a {
-        color: #0067f4; }
+        color: #f2c513; }
         .navgition .navbar .navbar-nav .nav-item.active > a::before, .navgition .navbar .navbar-nav .nav-item.active > a::after, .navgition .navbar .navbar-nav .nav-item:hover > a::before, .navgition .navbar .navbar-nav .nav-item:hover > a::after {
           opacity: 1; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -329,7 +330,7 @@ p {
         -o-transition: all 0.3s ease-out 0s;
         transition: all 0.3s ease-out 0s; }
         .navgition .navbar .navbar-social ul li a:hover {
-          color: #0067f4; }
+          color: #f2c513; }
 
 .header-hero {
   height: 650px;
@@ -440,7 +441,7 @@ p {
 ===========================*/
 .services-area {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   position: relative; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .services-area {

@@ -245,7 +245,10 @@
     overflow: hidden;
     height: 100%;
     bottom: -1px;
-    background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 .bgTop {
     z-index: 3;
@@ -292,13 +295,45 @@
 
 
 
+#image-gallery .modal-footer{
+  display: block;
+}
 
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 
+.sponsor{
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #e0e5fa;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5);
+  height: 160px;
+}
 
+.simg:hover{
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
 
+.simg{
+  transition: all 0.4s ease-in-out;
+}
 
+.fb:hover{
+  color: #3b5998;
+}
 
-
-
-
-
+.insta:hover{
+  color: #c36;
+}
