@@ -93,3 +93,10 @@
       e.preventDefault(); // prevent the default action (scroll / move caret)
     });
   
+
+  //======== COC Card Event Starts========//
+$(".option").click(function(){
+  $(".option").removeClass("active");
+  $(this).addClass("active");
+  
+});

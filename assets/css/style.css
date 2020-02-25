@@ -183,6 +183,7 @@ p {
     z-index: 99; }
   .navgition.sticky {
     position: fixed;
+    width: 100%;
     background-color: #fff;
     -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
     -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
@@ -191,7 +192,8 @@ p {
     -moz-transition: all 0.3s ease-out 0s;
     -ms-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s; }
+    transition: all 0.3s ease-out 0s; 
+    z-index: 99;}
   .navgition .navbar {
     position: relative;
     padding: 0; }
@@ -265,7 +267,7 @@ p {
         transition: all 0.3s ease-out 0s; }
         @media only screen and (min-width: 768px) and (max-width: 991px) {
           .navgition .navbar .navbar-nav .nav-item a {
-            padding: 10px 0;
+            padding: 10px ;
             display: block; } }
         @media (max-width: 767px) {
           .navgition .navbar .navbar-nav .nav-item a {
