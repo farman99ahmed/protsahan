@@ -13,7 +13,7 @@
     <title>Protsahan</title>
 
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="protsahan_logo.png" type="image/png">
 
     <!--====== Bootstrap css ======-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -32,6 +32,11 @@
     <link rel="stylesheet" href="assets/css/custom.css">
 
 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
 </head>
 
 <body>
@@ -45,7 +50,7 @@
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="#">
-                                <img src="assets/images/logo.svg" alt="Logo">
+                                <img src="protsahan_logo.png" alt="Logo"  height="60px" class="simg">
                             </a>
 
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarOne"
@@ -58,26 +63,22 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarOne">
                                 <ul class="navbar-nav m-auto">
                                     <li class="nav-item active">
-                                        <a class="page-scroll" href="#home">HOME</a>
+                                        <a class="page-scroll" href="index.html">HOME</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#">EVENTS</a>
+                                        <a href="events.html">EVENTS</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#">COMPETITIONS</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#">TEAM</a>
+                                        <a href="team.html">TEAM</a>
                                     </li>
 
                                 </ul>
                             </div>
 
                             <div class="navbar-social d-none d-sm-flex align-items-center">
-                                <span>FOLLOW US</span>
                                 <ul>
-                                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-instagram-original"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-f fb"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram insta"></i></a></li>
                                 </ul>
                             </div>
                         </nav> <!-- navbar -->
@@ -86,14 +87,25 @@
             </div> <!-- container -->
         </div> <!-- navgition -->
 
-        <div id="home" class="header-hero bg_cover"
-            style="background-image: url(https://www.itl.cat/pngfile/big/64-640134_wallpaper-i-really-like-the-google-now-landscape.jpg)">
-            
+        <div id="home" class="header-hero bg_cover">
+            <div class="waveWrapper waveAnimation">
+                <div class="waveWrapperInner bgTop">
+                  <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+                </div>
+                <div class="waveWrapperInner bgMiddle">
+                  <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+                </div>
+                <div class="waveWrapperInner bgBottom">
+                  <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+                </div>
+              </div>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-xl-8 col-lg-10">
+                    <div class="col-lg-12">
                         <div class="header-content text-center">
-
+                            <div class="header-title title">
+                                <img src="bg.png" alt="" srcset="">
+                           </div>        
                         </div> <!-- header content -->
                     </div>
                 </div> <!-- row -->
@@ -114,23 +126,25 @@
                 <div class="col-lg-6">
                     <div class="section-title pb-10">
                         <h4 class="title">Our Story</h4>
-                        <p class="text">Stop wasting time and money designing and managing a website that doesn’t get
-                            results. Happiness guaranteed! Stop wasting time and money designing and managing a website that doesn’t get
-                            results. Happiness guaranteed! Stop wasting time and money designing and managing a website that doesn’t get
-                            results. Happiness guaranteed! Stop wasting time and money designing and managing a website that doesn’t get
-                            results. Happiness guaranteed! Stop wasting time and money designing and managing a website that doesn’t get
-                            results. Happiness guaranteed! Stop wasting time and money designing and managing a website that doesn’t get
-                            results. Happiness guaranteed!</p>
+                        <p class="text text-justify">Protsahan, a fest full of zeel and energy, is organized every year to give a chance to students to explore their extracurricular talent. Mukesh Patel School of Technology Management and Engineering, Shirpur celebrates this extravaganza every year in order to portray Trendy Skills of talented students.
+It aims to create an environment where people from diverse backgrounds can cross-pollinate ideas, share insights and gain new perspectives to create actionable outcomes to push the world forward.
+Last year, with our theme, The Indian Escapade, we presented a spectacular show along with various beguiling pre-events besides Nrityam, Melodia and Ramp-walk which gave us all the memories to cherish forever. The fest became a huge success when the famous Kushal Bharatia The Band and our one and only, cutipie Mohit Gaur energized the whole atmosphere with their enthralling performances.
+This year too, keep your bids high cause Protsahan 2020 is going to take your breaths away with  
+the most captivating theme of all times The Comical Melange.</p>
                     </div> <!-- section title -->
                 </div>
-
                 <div class="col-lg-6">
                     <div class="section-title pb-10">
-                        
-                        <img src="assets/images/script.png" class="mx-auto d-block" alt="Services" height="280px" width="280px">
+                        <!-- <img src="giphy.gif" width="80%" height="80%" style="position:absolute" frameBorder="0" allowFullScreen> -->
+                        <img src="giphy.gif" class="mx-auto d-block" alt="Services" height="280px" width="280px">
 
                     </div> <!-- section title -->
                 </div>
+                <!-- <div class="col-lg-6 align-self-center">
+                        
+                    
+
+                </div> -->
             </div> <!-- row -->
 
         </div> <!-- conteiner -->
@@ -155,13 +169,7 @@
                         
                         <div class="frame">
                             <div class="plane-container">
-                            <a href="http://customer.io/" target="_blank">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            width="1131.53px" height="379.304px" viewBox="0 0 1131.53 379.304" enable-background="new 0 0 1131.53 379.304"
-                            xml:space="preserve" class="plane">
-                            <polygon fill="#D8D8D8" points="72.008,0 274.113,140.173 274.113,301.804 390.796,221.102 601.682,367.302 1131.53,0.223  "/>
-                            <polygon fill="#C4C4C3" points="1131.53,0.223 274.113,140.173 274.113,301.804 390.796,221.102   "/>
-                            </svg></a>
+                            <img src="superman.png" alt="" srcset="" >
                             
                             </div>
                             </div>
@@ -207,19 +215,17 @@
                             </svg>
                             
                             </div>
-
+                            
+                            
                     </div> <!-- section title -->
                 </div>
                 <div class="col-lg-6">
                     <div class="section-title pb-10">
                         <h4 class="title">The Theme</h4>
-                        <p class="text">Stop wasting time and money designing and managing a website that doesn’t get
-                            results. Happiness guaranteed! Stop wasting time and money designing and managing a website that doesn’t get
-                            results. Happiness guaranteed! Stop wasting time and money designing and managing a website that doesn’t get
-                            results. Happiness guaranteed! Stop wasting time and money designing and managing a website that doesn’t get
-                            results. Happiness guaranteed! Stop wasting time and money designing and managing a website that doesn’t get
-                            results. Happiness guaranteed! Stop wasting time and money designing and managing a website that doesn’t get
-                            results. Happiness guaranteed!</p>
+                        <p class="text text-justify" style="color: rgb(22, 22, 22);">I hear Protsahan! Yes, Protsahan is back with a BAM! KACHING! To witness the most happening event here at NMIMS Shirpur, we have the one and only- The Amazing Spiderman, the rebellious emotional baby- The Incredible Hulk, the go-to uncle: Chacha Chaudhary, Tin-Tin with his quirky instincts and the happy go, lucky guy- Mikey Mouse and many more from the extreme depths of the comic world for you guys!
+This year, Protsahan wants you to feel the zest & spark of the comic world in your real life. We all have this one pair of Tom and Jerry in our life, where absence of one makes the other turn flaccid as a puppet. And also a Suppandi, whose life's motto is to cause Mayhem. There is a Vision, the man with great power, utmost sense of responsibility and the one who justifies the iconic catchphrase: 
+"With great power comes great responsibility."
+ This year make your own mix of weirdos and storm through the castle, slide through the foam and emerge victoriously! Put down the Mjolnir and make a run for your life!</p>
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
@@ -242,50 +248,157 @@
             <div class="row justify-content-end">
                 <div class="col">
                     <div class="call-action-content text-center">
-                        <h2 class="call-title">Explore More</h2>
+                        <h2 class="call-title">Glimpses From Previous Edition</h2>
                     </div> <!-- slider-content -->
                     
                 </div>
             </div> <!-- row -->
-            <div class="row justify-content-center">
-
-                <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single-pricing pro mt-40">
-                        <div class="pricing-baloon">
-                            <img src="assets/images/event.svg" alt="baloon">
-                        </div>
-                        <div class="pricing-header">
-                            <span class="price">Events</span>
-                        </div>
-
-                        <div class="pricing-btn text-center">
-                            <a class="main-btn" href="#">Explore</a>
-                        </div>
-                        <div class="buttom-shape">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 112.35"><defs><style>.color-3{fill:#ffc510;isolation:isolate;}.cls-1{opacity:0.1;}.cls-2{opacity:0.2;}.cls-3{opacity:0.4;}.cls-4{opacity:0.6;}</style></defs><title>bottom-part1</title><g id="bottom-part"><g id="Group_747" data-name="Group 747"><path id="Path_294" data-name="Path 294" class="cls-1 color-3" d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z" transform="translate(0 0)"/><path id="Path_297" data-name="Path 297" class="cls-2 color-3" d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z" transform="translate(0 0)"/><path id="Path_296" data-name="Path 296" class="cls-3 color-3" d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z" transform="translate(0 0)"/><path id="Path_295" data-name="Path 295" class="cls-4 color-3" d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z" transform="translate(0 0)"/></g></g></svg>
-                        </div>
-                    </div> <!-- single pricing -->
-                </div>
-                <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single-pricing pro mt-40">
-                        <div class="pricing-baloon">
-                            <img src="assets/images/cup.svg" alt="baloon">
-                        </div>
-                        <div class="pricing-header">
-                            <span class="price">Competitions</span>
-                        </div>
-                        <div class="pricing-btn text-center">
-                            <a class="main-btn" href="#">Explore</a>
-                        </div>
-                        <div class="buttom-shape">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 112.35"><defs><style>.color-2{fill:#ffc510;isolation:isolate;}.cls-1{opacity:0.1;}.cls-2{opacity:0.2;}.cls-3{opacity:0.4;}.cls-4{opacity:0.6;}</style></defs><title>bottom-part1</title><g id="bottom-part"><g id="Group_747" data-name="Group 747"><path id="Path_294" data-name="Path 294" class="cls-1 color-2" d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z" transform="translate(0 0)"/><path id="Path_297" data-name="Path 297" class="cls-2 color-2" d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z" transform="translate(0 0)"/><path id="Path_296" data-name="Path 296" class="cls-3 color-2" d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z" transform="translate(0 0)"/><path id="Path_295" data-name="Path 295" class="cls-4 color-2" d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z" transform="translate(0 0)"/></g></g></svg>
-                        </div>
-                    </div> <!-- single pricing -->
-                </div>
-                
-
-            </div> <!-- row -->
         </div> <!-- container -->
+            <div class="container">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="padding: 25px;">
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                               data-image="assets/images/gallery/img (1).jpg"
+                               data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                     src="assets/images/gallery/img (1).jpg"
+                                     alt="Another alt text">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="padding: 25px;">
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                               data-image="assets/images/gallery/img (2).jpg"
+                               data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                     src="assets/images/gallery/img (2).jpg"
+                                     alt="Another alt text">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="padding: 25px;">
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                               data-image="assets/images/gallery/img (3).jpg"
+                               data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                     src="assets/images/gallery/img (3).jpg"
+                                     alt="Another alt text">
+                            </a>
+                        </div>
+            
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="padding: 25px;">
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                               data-image="assets/images/gallery/img (4).jpg"
+                               data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                     src="assets/images/gallery/img (4).jpg"
+                                     alt="Another alt text">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="padding: 25px;">
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                               data-image="assets/images/gallery/img (5).jpg"
+                               data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                     src="assets/images/gallery/img (5).jpg"
+                                     alt="Another alt text">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="padding: 25px;">
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                               data-image="assets/images/gallery/img (6).jpg"
+                               data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                     src="assets/images/gallery/img (6).jpg"
+                                     alt="Another alt text">
+                            </a>
+                        </div>
+            
+            
+            
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="padding: 25px;">
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                               data-image="assets/images/gallery/img (7).jpg"
+                               data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                     src="assets/images/gallery/img (7).jpg"
+                                     alt="Another alt text">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="padding: 25px;">
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                               data-image="assets/images/gallery/img (8).jpg"
+                               data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                     src="assets/images/gallery/img (8).jpg"
+                                     alt="Another alt text">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="padding: 25px;">
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                               data-image="assets/images/gallery/img (9).jpg"
+                               data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                     src="assets/images/gallery/img (9).jpg"
+                                     alt="Another alt text">
+                            </a>
+                        </div>
+            
+            
+            
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="padding: 25px;">
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                               data-image="assets/images/gallery/img (10).jpg"
+                               data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                     src="assets/images/gallery/img (10).jpg"
+                                     alt="Another alt text">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="padding: 25px;">
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                               data-image="assets/images/gallery/img (11).jpg"
+                               data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                     src="assets/images/gallery/img (11).jpg"
+                                     alt="Another alt text">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="padding: 25px;">
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                               data-image="assets/images/gallery/img (12).jpg"
+                               data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                     src="assets/images/gallery/img (12).jpg"
+                                     alt="Another alt text">
+                            </a>
+                        </div>
+                    </div>
+            
+            
+                    <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="image-gallery-title"></h4>
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+                                    </button>
+            
+                                    <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         
     </section>
     <div class="header-shape">
@@ -304,8 +417,10 @@
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
-            <div class="row justify-content-center">
- 
+            <div class="row justify-content-center" style="margin-top: 5%;">
+                <div class="col-md-4 sponsor">
+                    <img src="assets/images/sponsors/1.png" alt="Souled Store" class="simg">
+                </div>
 
             </div> <!-- row -->
         </div> <!-- conteiner -->
@@ -327,11 +442,11 @@
                     <div class="col-lg-12">
                         <div class="footer-logo-support d-md-flex align-items-end justify-content-between">
                             <div class="footer-logo d-flex align-items-end">
-                                <a class="mt-30" href="index.html"><img src="assets/images/logo.svg" alt="Logo"></a>
+                                <a class="mt-30" href="index.html"><img src="protsahan_logo.png" alt="Logo"  height="60px" class="simg"></a>
 
                                 <ul class="social mt-30">
-                                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-instagram-original"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-f fb"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram insta"></i></a></li>
                                 </ul>
                             </div> <!-- footer logo -->
 
@@ -364,7 +479,12 @@
                     <div class="col-lg-6 col-md-6 col-sm-7">
                         <div class="footer-newsletter">
                             <h6 class="footer-title">Reach Us</h6>
-                            <p class="text">Subscribe weekly newsletter to stay upto date. We don’t send spam.</p>
+                            <p class="text"><strong>SVKMs NMIMS </strong><br>
+              Mukesh Patel Technology Park<br>
+              Shirpur, Distt. Dhule<br>
+              Maharashtra, 425405<br>
+              <strong>Phone:</strong> +91 9876543210<br>
+              <strong>Email:</strong> info@protsahan.com<br></p>
                         </div> <!-- footer newsletter -->
                     </div>
                 </div> <!-- row -->
@@ -376,13 +496,37 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="copyright text-center">
-                            <p class="text">© Protsahan 2020. All Rights Reserved</br>Developed by Team Technical</p>
+                            <p class="text">© Protsahan 2020. All Rights Reserved</br>Developed by <a data-toggle="modal" data-target="#myModal" style="cursor:pointer">Team Technical</a></p>
                         </div>
                     </div>
                 </div> <!-- row -->
             </div> <!-- container -->
         </div> <!-- footer copyright -->
     </footer>
+    <!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title " >TEAM</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
 
     <!--====== FOOTER PART ENDS ======-->
 

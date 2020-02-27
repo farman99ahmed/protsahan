@@ -1,111 +1,102 @@
-// Read the article
-// https://css-tricks.com/polylion
 
-var tmax_opts = {
-    delay: 0.5,
-    repeat: -1,
-    repeatDelay: 0.5,
-    yoyo: true
-  };
+
+  let modalId = $('#image-gallery');
+
+  $(document)
+    .ready(function () {
   
-  var tmax_tl           = new TimelineMax(tmax_opts),
-      polylion_shapes   = $('svg.polylion > g polygon'),
-      polylion_stagger  = 0.00475,
-      polylion_duration = 1.5;
+      loadGallery(true, 'a.thumbnail');
   
-  var polylion_staggerFrom = {
-    scale: 0,
-    opacity: 0,
-    transformOrigin: 'center center',
-  };
+      //This function disables buttons when needed
+      function disableButtons(counter_max, counter_current) {
+        $('#show-previous-image, #show-next-image')
+          .show();
+        if (counter_max === counter_current) {
+          $('#show-next-image')
+            .hide();
+        } else if (counter_current === 1) {
+          $('#show-previous-image')
+            .hide();
+        }
+      }
   
-  var polylion_staggerTo = {
-    opacity: 1,
-    scale: 1,
-    ease: Elastic.easeInOut
-  };
+      /**
+       *
+       * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
+       * @param setClickAttr  Sets the attribute for the click handler.
+       */
   
-  tmax_tl.staggerFromTo(polylion_shapes, polylion_duration, polylion_staggerFrom, polylion_staggerTo, polylion_stagger, 0);
-
-
-
-
-
-
-  //HTML CSS JSResult
-var $w = $( window ).width();
-var $dW = $('.bb8').css('width');
-$dW = $dW.replace('px', '');
-$dW = parseInt($dW);
-var $dPos = 0;
-var $dSpeed = 1;
-var $dMinSpeed = 1;
-var $dMaxSpeed = 4;
-var $dAccel = 1.04;
-var $dRot = 0;
-var $mPos = $w - $w/5;
-var $slowOffset = 120;
-var $movingRight = false;
-
-function moveDroid(){
-  if($mPos > $dPos + ($dW/4)){
-    // moving right
-    if(!$movingRight){
-      $movingRight = true;
-      $('.antennas').addClass('right');
-      $('.eyes').addClass('right');
-    }
-    if($mPos - $dPos > $slowOffset){
-      if($dSpeed < $dMaxSpeed){
-        // speed up
-        $dSpeed = $dSpeed * $dAccel;
+      function loadGallery(setIDs, setClickAttr) {
+        let current_image,
+          selector,
+          counter = 0;
+  
+        $('#show-next-image, #show-previous-image')
+          .click(function () {
+            if ($(this)
+              .attr('id') === 'show-previous-image') {
+              current_image--;
+            } else {
+              current_image++;
+            }
+  
+            selector = $('[data-image-id="' + current_image + '"]');
+            updateGallery(selector);
+          });
+  
+        function updateGallery(selector) {
+          let $sel = selector;
+          current_image = $sel.data('image-id');
+          $('#image-gallery-title')
+            .text($sel.data('title'));
+          $('#image-gallery-image')
+            .attr('src', $sel.data('image'));
+          disableButtons(counter, $sel.data('image-id'));
+        }
+  
+        if (setIDs == true) {
+          $('[data-image-id]')
+            .each(function () {
+              counter++;
+              $(this)
+                .attr('data-image-id', counter);
+            });
+        }
+        $(setClickAttr)
+          .on('click', function () {
+            updateGallery($(this));
+          });
       }
-    } else if($mPos-$dPos < $slowOffset){
-      if($dSpeed > $dMinSpeed){
-        // slow down
-        $dSpeed = $dSpeed / $dAccel;
+    });
+  
+  // build key actions
+  $(document)
+    .keydown(function (e) {
+      switch (e.which) {
+        case 37: // left
+          if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
+            $('#show-previous-image')
+              .click();
+          }
+          break;
+  
+        case 39: // right
+          if ((modalId.data('bs.modal') || {})._isShown && $('#show-next-image').is(":visible")) {
+            $('#show-next-image')
+              .click();
+          }
+          break;
+  
+        default:
+          return; // exit this handler for other keys
       }
-    }
-    $dPos = $dPos + $dSpeed;
-    $dRot = $dRot + $dSpeed;
-  } else if($mPos < $dPos - ($dW/4)){
-    // moving left
-    if($movingRight){
-      $movingRight = false;
-      $('.antennas').removeClass('right');
-      $('.eyes').removeClass('right');
-    }
-    if($dPos - $mPos > $slowOffset){
-      if($dSpeed < $dMaxSpeed){
-        // speed up
-        $dSpeed = $dSpeed * $dAccel;
-      }
-    } else if($dPos - $mPos < $slowOffset){
-      if($dSpeed > $dMinSpeed){
-        // slow down
-        $dSpeed = $dSpeed / $dAccel;
-      }
-    }
-    $dPos = $dPos - $dSpeed;
-    $dRot = $dRot - $dSpeed;
-  } else { }
-  $('.bb8').css('left', $dPos);
-  $('.ball').css({ WebkitTransform: 'rotate(' + $dRot + 'deg)'});
-  $('.ball').css({ '-moz-transform': 'rotate(' + $dRot + 'deg)'});
-}
+      e.preventDefault(); // prevent the default action (scroll / move caret)
+    });
+  
 
-setInterval(moveDroid, 10);
-
-$( document ).on( "mousemove", function( event ) {
-  $('h2').addClass('hide');
-  $mPos = event.pageX;
-  return $mPos;
-});
-
-//======== COC Card Event Starts========//
+  //======== COC Card Event Starts========//
 $(".option").click(function(){
   $(".option").removeClass("active");
   $(this).addClass("active");
   
 });
-//========== COC Card JS Ends===========//
