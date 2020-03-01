@@ -2,7 +2,6 @@ let items = ["ZEzMpdj", "ZEzMpdj", "ZEzMpdj", "ZEzMpdj", "LYPqaME", "OBPJKK", "K
 let num = ["one", "two", "three", "four", "five", "six"];
 let randomItem = `<a class="u-random" href="https://codepen.io/z-/details/${items[Math.floor(Math.random() * items.length)]}" target="_blank"></a>`
 var button = button || false;
-//<link href="assets/css/codepen.css" rel="stylesheet"></link>
 if (window.location.href.indexOf("fullcpgrid") == -1 /*Small on pages*/ && window.location.href.indexOf("debug") /*...debug, mentioned for whenever I forget how to read code*/ == -1 && window.location.href.indexOf("fullembedgrid") == -1 /*Focused/details*/) { //Don't show on these pages
   document.body.innerHTML +=
         `<link href="assets/css/codepen.css" rel="stylesheet">
